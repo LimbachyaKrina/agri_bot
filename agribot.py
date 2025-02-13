@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
-api_key = os.getenv("GEMINI_API_KEY")
+# api_key = os.getenv("GEMINI_API_KEY")
+api_key = st.secrets["GEMINI_API_KEY"]
 
 
 # Set your Gemini API key
